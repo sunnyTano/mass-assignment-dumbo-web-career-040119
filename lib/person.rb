@@ -11,8 +11,7 @@ def initialize(attr)
   attr.map do |k, v|
     count = "#{k} = #{v}"
   end 
-end 
-return count
+count
 end 
 
 end
