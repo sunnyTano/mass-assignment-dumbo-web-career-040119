@@ -9,14 +9,11 @@ attr_accessor :name, :birthday, :hair_color, :eye_color, :height,
 def initialize(attr)
   count = ""
   attr.map do |k, v|
-    count = "#{k} = #{v}"
+    count = self.send("#{k} = #{v}")
   end 
-count.send 
+count
 binding.pry
 end 
 
 end
-
-# a = Person.new
-# a.send :name, "sue"
 
