@@ -7,10 +7,12 @@ attr_accessor :name, :birthday, :hair_color, :eye_color, :height,
 :wrist_size, :glove_size, :pant_length, :pant_width
 
 def initialize(attr)
-  
+  count = ""
   attr.map do |k, v|
-    puts "#{k} = #{v}"
+    count = "#{k} = #{v}"
   end 
+end 
+return count
 end 
 
 end
