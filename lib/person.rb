@@ -9,7 +9,7 @@ attr_accessor :name, :birthday, :hair_color, :eye_color, :height,
 def initialize(attr)
   
   attr.map do |k, v|
-     "#{k} = #{v}"
+    puts "#{k} = #{v}"
   end 
 end 
 
