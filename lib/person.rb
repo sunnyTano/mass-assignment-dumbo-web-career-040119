@@ -15,7 +15,7 @@ end
 end
 
 
-# c = Car.new()
+# a = Person.new()
 # params.each do |key, value|
-#   c.send("#{key}=", value)
+#   a.send("#{key}=", value)
 # end
