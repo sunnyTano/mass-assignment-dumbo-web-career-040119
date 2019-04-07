@@ -7,11 +7,15 @@ attr_accessor :name, :birthday, :hair_color, :eye_color, :height,
 :wrist_size, :glove_size, :pant_length, :pant_width
 
 def initialize(attr)
-  count = ""
-  attr.map do |k, v|
-    self.send(k, ("= #{v}"))
+  attr.each do |k, v|
+    self.send("#{k}=", value)
   end 
 end 
 
 end
 
+
+# c = Car.new()
+# params.each do |key, value|
+#   c.send("#{key}=", value)
+# end
