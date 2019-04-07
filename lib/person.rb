@@ -15,7 +15,7 @@ end
 
 end
 
-a = Person.new
-a.send :name, "sue"
+# a = Person.new
+# a.send :name, "sue"
 
 binding.pry
