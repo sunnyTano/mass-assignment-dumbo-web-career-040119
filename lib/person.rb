@@ -1,21 +1,21 @@
-require 'pry'
+# require 'pry'
 
-class Person
+# class Person
   
-attr_accessor :name, :birthday, :hair_color, :eye_color, :height,
-:weight, :handed, :complexion, :t_shirt_size, 
-:wrist_size, :glove_size, :pant_length, :pant_width
+# attr_accessor :name, :birthday, :hair_color, :eye_color, :height,
+# :weight, :handed, :complexion, :t_shirt_size, 
+# :wrist_size, :glove_size, :pant_length, :pant_width
 
-def initialize(attr_accessor)
-  attr_accessor.each do |k, v|
-    self.send(("#{k}="), value)
-  end 
-end 
+# def initialize(attr_accessor)
+#   attr_accessor.each do |k, v|
+#     self.send(("#{k}="), value)
+#   end 
+# end 
 
-end
-
-
-# a = Person.new()
-# params.each do |key, value|
-#   a.send("#{key}=", value)
 # end
+
+
+# # a = Person.new()
+# # params.each do |key, value|
+# #   a.send("#{key}=", value)
+# # end
