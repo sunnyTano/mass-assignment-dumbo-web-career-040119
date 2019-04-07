@@ -8,7 +8,7 @@ attr_accessor :name, :birthday, :hair_color, :eye_color, :height,
 
 def initialize(attr)
   attr.each do |k, v|
-    self.send("#{k}=", value)
+    self.send(("#{k}="), value)
   end 
 end 
 
