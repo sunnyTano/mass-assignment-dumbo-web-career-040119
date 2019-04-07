@@ -8,14 +8,15 @@ attr_accessor :name, :birthday, :hair_color, :eye_color, :height,
 
 def initialize(attrs)
   attrs.each do |k, v|
-    self.send("#{k}=", v)
-    puts k, v
+    self.send("#{k}=", v) # .send => dynamically call on method. 
+    #puts k, v
   end 
 end 
 
 end
 
 
+#    Example 
 # a = Person.new()
 # params.each do |key, value|
 #   a.send("#{key}=", value)
