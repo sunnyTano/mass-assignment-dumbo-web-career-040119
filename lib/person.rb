@@ -12,6 +12,7 @@ def initialize(attr)
     count = "#{k} = #{v}"
   end 
 count
+binding.pry
 end 
 
 end
@@ -19,4 +20,3 @@ end
 # a = Person.new
 # a.send :name, "sue"
 
-binding.pry
