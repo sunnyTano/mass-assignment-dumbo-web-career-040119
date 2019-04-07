@@ -9,12 +9,13 @@ attr_accessor :name, :birthday, :hair_color, :eye_color, :height,
 def initialize(attr)
   
   attr.map do |k, v|
-    puts "#{k} = #{v}"
+     "#{k} = #{v}"
   end 
 end 
 
 end
 
+a = Person.new
+a.send :name, "sue"
 
-
-
+binding.pry
