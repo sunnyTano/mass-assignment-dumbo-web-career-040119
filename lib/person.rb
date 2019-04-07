@@ -9,7 +9,7 @@ attr_accessor :name, :birthday, :hair_color, :eye_color, :height,
 def initialize(attr)
   count = ""
   attr.map do |k, v|
-    self.send("#{k} = #{v}")
+    self.send(k, ("= #{v}"))
   end 
 end 
 
