@@ -11,7 +11,7 @@ def initialize(attr)
   attr.map do |k, v|
     count = "#{k} = #{v}"
   end 
-count
+count.send 
 binding.pry
 end 
 
